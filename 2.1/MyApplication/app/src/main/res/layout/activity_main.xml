@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="姓名"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/myInput1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择性别"
+            android:textSize="20sp" />
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男" />
+
+            <RadioButton
+                android:id="@+id/woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女" />
+        </RadioGroup>
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="专业"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/edu"
+            android:prompt="@string/eduprompt"
+            android:spinnerMode="dialog" />
+    </TableRow>
+    
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="兴趣爱好"
+        android:textSize="18dp" />
+
+    <LinearLayout>
+
+        <CheckBox
+            android:id="@+id/mybox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="音乐"
+            android:textSize="18dp" />
+
+        <CheckBox
+            android:id="@+id/mybox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="阅读"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout>
+
+        <CheckBox
+            android:id="@+id/mybox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="游泳"
+            android:textSize="18dp" />
+
+        <CheckBox
+            android:id="@+id/mybox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="运动"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消" />
+    </LinearLayout>
+
+</TableLayout>

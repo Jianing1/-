@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="eduprompt">请选择你的专业</string>
+</resources>
